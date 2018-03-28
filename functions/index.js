@@ -16,7 +16,11 @@
 
 // Note: You will edit this file in the follow up codelab about the Cloud Functions for Firebase.
 
-// TODO(DEVELOPER): Import the Cloud Functions for Firebase and the Firebase Admin modules here.
+// Import the Firebase SDK for Google Cloud Functions.
+const functions = require('firebase-functions');
+// Import and initialize the Firebase Admin SDK.
+const admin = require('firebase-admin');
+admin.initializeApp(functions.config().firebase);
 
 // TODO(DEVELOPER): Write the addWelcomeMessages Function here.
 
